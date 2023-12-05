@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pass the message</title>
+</head>
+<style>
+</style>
+<body>
+    <div class="container">
+       <div class="message">
+        <p>
+            <h3>Message Box</h3>
+            <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);"></p>
+        </p>
+        <p>
+            <label for="message-input">
+                Enter a message
+            </label>
+            <br>
+            <button class="msg-btn"><i class="fa-solid fa-message"></i></button><input type="text" id="message-input">
+        </p>
+        <p><button class="btn2" onclick="getMessage()">Send</button></p>
+        <p id="message-output"></p>
+       </div> 
+    </div>
+    <!-- <script>
+        const messageInput = document.getElementById("message-input");
+        // const btn = document.querySelector(".btn2")
+        // btn.addEventListener("click", getMessage())
+        messageInput.addEventListener("keydown", function(event){
+            if (event.key == "Enter")
+            getMessage();
+        })
+
+        function getMessage(){
+            document.getElementById("message-output").innerHTML = messageInput.value;
+            messageInput.value = "";
+        }
+    </script> -->
+    <script src="Main.js"></script>
+</body>
+</html>
